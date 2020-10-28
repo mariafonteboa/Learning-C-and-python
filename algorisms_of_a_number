@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int *digital_root(int n) {
+  int i, digitos, sum; digitos = 0; sum = 0;
+  int numero_cp;
+  int *algarismo;
+  numero_cp = n;
+  while(numero_cp >= 1){
+    numero_cp = numero_cp/10;
+    digitos++;
+  }
+  numero_cp = n;
+  printf("%d\n\n", digitos);
+  algarismo = (int*)malloc(sizeof(int)*digitos);
+  for(i = 1; i <= digitos; i++){
+    algarismo[i-1] = (int)numero_cp % (int)pow(10,i);
+    algarismo[i-1] = (int)(algarismo[i-1]/pow(10, i - 1));
+    numero_cp = numero_cp - algarismo[i-1];
+  }
+  for(i = 0; i < digitos; i++){
+    printf("%d\n", algarismo[i]);
+    sum = sum + algarismo[i];
+  }
+  return algarismo;
+}
