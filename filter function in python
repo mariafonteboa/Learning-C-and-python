@@ -1,0 +1,7 @@
+
+def friend(x):
+    return(list(filter(lambda z: len(z) == 4, x)))
+    
+    #filter(função de verificação, lista)
+    Para todos os elementos da lista, se forem verificados como verdadeiros serao incluídos na resposta
+    
