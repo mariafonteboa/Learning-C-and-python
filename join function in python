@@ -1,0 +1,4 @@
+def to_camel_case(text):
+  result = ''.join(text.title().split("_")) #argumento de join é uma lista ou qualquer sequência de elementos. O que precede join é o caracter que seprará as string unidas
+  # função split pega uma string e separa. O argumento será a marca que delimita cada string a ser separada
+  return (result)
