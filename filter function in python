@@ -5,3 +5,12 @@ def friend(x):
     #filter(função de verificação, lista)
     Para todos os elementos da lista, se forem verificados como verdadeiros serao incluídos na resposta
     
+a = [1,2,3,4]
+b = [4,3,5,7]
+
+for i in (a + b):
+    va, vb = a.count(i), b.count(i)
+    
+MMC(a,b) = a*b/MDC(a.b)
+
+Em uma lista com número de elementos ímpar, a posição positiva do elemento do meio somada à posição negativa do mesmo elemtnos será -1
